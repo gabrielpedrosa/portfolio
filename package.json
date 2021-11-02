@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Criação de um portfolio para exibição de projetos pessoais.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielpedrosa/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielpedrosa/portfolio/issues"
+  },
+  "homepage": "https://github.com/gabrielpedrosa/portfolio#readme",
+  "dependencies": {
+    "next": "^12.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
