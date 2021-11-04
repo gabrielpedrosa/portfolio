@@ -3,7 +3,7 @@ function Home(){
     return(
         <div>
             Hello World
-            <Link href="/home">
+            <Link href="/">
                 <a>Home</a>
             </Link>
             <Link href="/sobre">

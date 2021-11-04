@@ -3,7 +3,7 @@ function Sobre(){
     return(
         <div>
             Hello World 2
-            <Link href="/home">
+            <Link href="/">
                 <a>Home</a>
             </Link>
             <Link href="/sobre">
