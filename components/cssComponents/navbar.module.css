@@ -1,0 +1,84 @@
+.nav{
+    background-color: #21130d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000px) / 2);
+    z-index: 10;
+}
+
+.navItem{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logoContent{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.logoName{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.navItem:hover{
+    color: #15cdfc;
+}
+
+.bar{
+    display: none;
+    color: #fff;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    margin-right: -24px;
+}
+
+@media screen and (max-width: 768px) {
+    .bar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .navMenu{
+        display: none;
+    }
+    .logoName{
+        display: none;
+    }
+}

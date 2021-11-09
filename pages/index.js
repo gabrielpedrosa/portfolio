@@ -1,16 +1,14 @@
-import Link from 'next/link'
+import Navbar from '../components/Navbar';
+import PageContent from './pagecontent.js'
+
+
 function Home(){
     return(
-        <div>
-            Hello World
-            <Link href="/">
-                <a>Home</a>
-            </Link>
-            <Link href="/sobre">
-                <a>Sobre</a>
-            </Link>
-        
-        </div>
+        <>
+            <PageContent>
+                <Navbar/>
+            </PageContent>
+        </>
     )
 }
 

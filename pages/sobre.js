@@ -1,15 +1,12 @@
-import Link from 'next/link'
+import Navbar from '../components/Navbar';
+import PageContent from './pagecontent.js'
+
 function Sobre(){
     return(
         <div>
-            Hello World 2
-            <Link href="/">
-                <a>Home</a>
-            </Link>
-            <Link href="/sobre">
-                <a>Sobre</a>
-            </Link>
-        
+            <PageContent>
+                <Navbar/>
+            </PageContent>
         </div>
     )
 }
