@@ -1,6 +1,6 @@
 import navbarStyle from '../cssComponents/navbar.module.css';
 import Link from 'next/link';
-import {FaBars} from 'react-icons/fa';
+import {FaBars, FaTimes} from 'react-icons/fa';
 
 
 export function Nav(props){
@@ -23,8 +23,16 @@ export function NavItem(props){
 
 export function Bar(props){
     return (
-        <div className={navbarStyle.bar}>
-            <FaBars/>
+        <div className={navbarStyle.bar} onClick={props.onClick}>
+            {props.click ? <FaTimes/> :  <FaBars/>}
+        </div>
+    )
+}
+
+export function MobileNav(props){
+    return (
+        <div className={props.click ? navbarStyle.active : navbarStyle.navMobile} onClick={props.onClickMobile}>
+            {props.children}
         </div>
     )
 }
@@ -46,7 +54,7 @@ export function Logo(props){
 
 export function NavMenu(props){
     return (
-        <div className={navbarStyle.navMenu}>
+        <div className={props.click ? navbarStyle.active : navbarStyle.navMenu} onClick={props.onClickMobile}>
             {props.children}
         </div>
     )
