@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import PageContent from './pagecontent.js'
 
 
@@ -7,6 +8,7 @@ function Home(){
         <>
             <PageContent>
                 <Navbar/>
+                <Footer/>
             </PageContent>
         </>
     )

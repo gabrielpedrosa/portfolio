@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Nav, NavItem, Bar, NavMenu, Logo, MobileNav} from './NavComponents.js'
+import {Nav, NavItem, Bar, NavMenu, Logo} from './NavComponents.js'
 
 const Navbar = () => {
     const [click, setClick] = useState(false);

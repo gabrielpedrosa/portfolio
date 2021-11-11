@@ -5,5 +5,11 @@ export default createGlobalStyle`
     margin: 0;
     padding:0;
     box-sizing: border-box;
+
 }
+// html, body{
+//     position: relative;
+//     top: 300px;
+//     background: #ff9c00;
+// }
 `;

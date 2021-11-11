@@ -1,4 +1,4 @@
-import navbarStyle from '../cssComponents/navbar.module.css';
+import navbarStyle from './Style/navbar.module.css';
 import Link from 'next/link';
 import {FaBars, FaTimes} from 'react-icons/fa';
 
