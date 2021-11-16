@@ -1,0 +1,65 @@
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0px;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    
+}
+.flex{
+    display: flex;
+    
+}
+.container{
+    display: flex;
+    margin: 0;
+    padding: 20px 80px;
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.titleName{
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    color: #143578;
+    margin: auto 0;
+    padding-right: 10px;
+}
+
+.cityName{
+    font-family: 'Segoe UI';
+    font-size: 32px;
+    color: #143578;   
+}
+
+.perfil{
+    display: flex;
+    font-family: 'Segoe UI';
+    color: #4361EE;
+    font-size: 18px;
+    vertical-align: middle;
+    padding-right: 10px;
+    margin: auto 0;
+}
+
+.perfilSelect{
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(180deg, #4361EE 0%, #3149B9 100%);
+    border-radius: 10px;
+    padding: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.perfilOption{
+    background-color: linear-gradient(180deg, #4361EE 0%, #3149B9 100%);;
+}
