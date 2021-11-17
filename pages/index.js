@@ -8,7 +8,6 @@ function Home(){
         <>
             <PageContent>
                 <Navbar/>
-
                 <Footer/>
             </PageContent>
         </>
