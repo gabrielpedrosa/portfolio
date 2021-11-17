@@ -26,3 +26,16 @@ export function DashboardTitle(props){
 
     )
 }
+
+export function DashboardSubTitle(props){
+    return(
+        <div className={dashboardStyle.title}>
+            <div className={dashboardStyle.flex}>
+                {props.children}
+            </div>
+            <div className={dashboardStyle.flex}>
+                <button className={dashboardStyle.btn}>nome</button>
+            </div>
+        </div>
+    )
+}
