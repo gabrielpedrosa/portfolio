@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import PageContent from './pagecontent.js';
 import Dashboard from '../components/dashboard';
+import Section from '../components/Section';
 
 
 function Home(){
@@ -9,7 +10,7 @@ function Home(){
         <>
             <PageContent>
                 <Navbar/>
-                <Dashboard/>
+                <Section/>
                 <Footer/>
             </PageContent>
         </>
