@@ -1,11 +1,15 @@
 import styled from "styled-components";
-import { Container } from "./SectionComponents";
-
+import { Container, Title, Separator, Content } from "./SectionComponents";
+import Image from 'next/image';
 const Section = () => {
     return (
         <>
             <Container bgColor='#20150d' fontColor='#fff'>
-                Teste
+                <Title fontSize='28' fontColor='#fff'>Titulo</Title>
+                <Separator/>
+                <Content>
+                    <Image src='/../../images/image.jpg' width={300}height={300}/>
+                </Content>
             </Container>
         </>
     )
