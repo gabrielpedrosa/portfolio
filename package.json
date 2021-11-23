@@ -23,5 +23,8 @@
     "url": "https://github.com/gabrielpedrosa/portfolio/issues"
   },
   "homepage": "https://github.com/gabrielpedrosa/portfolio#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.1"
+  }
 }

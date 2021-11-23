@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { Container, Title, Separator, Content } from "./SectionComponents";
+import { Container, Title, Separator, Content, Card, Legend } from "./SectionComponents";
 import Image from 'next/image';
+import GlobalStyle from '../../css/styles.js';
+
 const Section = () => {
     return (
         <>
@@ -8,7 +10,19 @@ const Section = () => {
                 <Title fontSize='28' fontColor='#fff'>Titulo</Title>
                 <Separator/>
                 <Content>
-                    <Image src='/../../images/image.jpg' width={300}height={300}/>
+                    <Card>
+                        <img src='images/image.jpg' style={{width: "100%", height: '100%', maxHeight: "60vh", borderRadius:"10px"}}/>
+                        <Legend>Legendada para a imagem escolhida referente ao prjeto</Legend>
+                    </Card>
+                    <Card>
+                        aqui
+                    </Card>
+                    <Card>
+                        aqui
+                    </Card>
+                    <Card>
+                        aqui
+                    </Card>
                 </Content>
             </Container>
         </>

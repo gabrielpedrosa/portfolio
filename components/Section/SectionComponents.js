@@ -6,6 +6,9 @@ export const Container = styled.div`
     padding: 0.5rem calc((100vw - 1000px) / 2);
     background-color: ${props => props.bgColor};
     color: ${props => props.fontColor};
+    box-sizing: border-box;
+
+    
 `;
 
 export const Title = styled.h2`
@@ -22,13 +25,39 @@ export const Separator = styled.hr`
 `;
 
 export const Content = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
-    padding: 0 2rem;
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const Card = styled.div`
+    display: flex;
+    background-color: #000;
+    margin: 10px 0;
+    width: 30%;
+    min-width: 30%;
+    min-height: 250px;
+    border-radius: 15px;
+    flex-direction: column;
+    
+
+    @media(max-width: 768px) {
+        width: 100%;
+        max-height: 80vh;
+    }
+`;
+
+export const Legend = styled.h3`
+    text-align: center;
+    padding: 10px;
 
 `;
