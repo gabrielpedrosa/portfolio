@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container, Title, Separator, Content, Card, Legend } from "./SectionComponents";
 import Image from 'next/image';
-import GlobalStyle from '../../css/styles.js';
+import sectionStyle from './Style/section.module.css';
 
 const Section = () => {
     return (
@@ -11,7 +11,7 @@ const Section = () => {
                 <Separator/>
                 <Content>
                     <Card>
-                        <img src='images/image.jpg' style={{width: "100%", height: '100%', maxHeight: "60vh", borderRadius:"10px"}}/>
+                        <img src='images/image.jpg' className={sectionStyle.cardImage}/>
                         <Legend>Legendada para a imagem escolhida referente ao prjeto</Legend>
                     </Card>
                     <Card>
