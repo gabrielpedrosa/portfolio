@@ -1,0 +1,224 @@
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: #4361ee !important;
+    background: #E4E4E4;
+    font-family: Segoe UI;
+    font-weight: Regular;
+}
+
+
+.body h1, h2, h3, h4 {
+    color: #4361ee !important;
+}
+
+.table {
+    color: #143578 !important;
+}
+
+.dados {
+
+  background: rgba(255,255,255,1);
+  width: 463px;
+  height: 376px;
+
+}
+
+.bolinha {
+    background: #e9bf2a;
+    width: 17px;
+    height: 17px;
+    opacity: 1;
+    border-radius: 50%
+}
+
+.testbutton {
+    font-family: arial;
+    font-weight: bold;
+    color: #ffffff !important;
+    font-size: 14px;
+    text-shadow: 0px 1px 49px #ffffff;
+    box-shadow: 0px 1px 1px #bee2f9;
+    padding: 10px 20px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    background: #4361EE;
+  }
+  .testbutton:hover {
+    color: #ffffff !important;
+    background: solid;
+  }
+
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}    .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        cursor: pointer;
+        padding: 9px 13px;
+        outline: 0;
+        border: 0px solid #000000;
+        border-radius: 18px;
+        background: #4361ee;
+        color: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select::-ms-expand {
+            display: none;
+        }
+        .select select:hover,
+        .select select:focus {
+            color: #ffffff;
+            background: #4361ee;
+        }
+        .select select:disabled {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #4361ee transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #4361ee;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #4361ee;
+}
+
+.estatistica {
+    width: 190px;
+    height: 260px;
+    background: linear-gradient(rgba(234,188,26,1), rgba(232,190,41,1));
+    opacity: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    color:#ffffff;
+    overflow: hidden;
+}
+
+.estatistica button{
+    color: #eabc1a
+}
+
+.estatistica2 {
+    width: 190px;
+    height: 260px;
+    background: linear-gradient(rgba(21,178,126,1), rgba(57,179,138,1));
+    margin: 15px;
+    opacity: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    color:#ffffff;
+    overflow: hidden;
+  }
+
+  .estatistica2 button{
+    color: #15b27e
+}
+
+.estatistica2 h4{
+    color: #ffffff
+}
+
+
+  .estatistica3 {
+    width: 190px;
+    height: 260px;
+    background: linear-gradient(rgba(179,44,44,1), rgba(232,66,66,1));
+    margin: 15px;
+    opacity: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    color:#ffffff;
+    overflow: hidden;
+  }
+
+  .estatistica3 button{
+    color: #b32c2c
+}
+
+.justify-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-2{
+    display: inline-flex;
+
+}
+
+.flex-col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .flex-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .w-100{
+        width: 1005;
+    }
+    .estatistica, .estatistica2, .estatistica3{
+        width: 70%;
+        height: 300px;
+    }
+
+    .select{
+        margin: 0 auto;
+    }
+
+    .select select{
+        margin: 0 auto;
+    }
+
+    .legend{
+        font-size: 22px ;
+    }
+}

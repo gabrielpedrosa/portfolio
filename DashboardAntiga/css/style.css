@@ -1,0 +1,180 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-light-gray{
+    background: #E4E4E4
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.pageTitle{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    justify-content: space-between;
+    font-size: 1.75rem;
+}
+
+.titleItem{
+    padding: 10px;
+}
+
+.labelTitle{
+    color: #4361ee;
+    font-weight: bold;
+}
+
+.select {
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 30%;
+}    
+.select select {
+    font-family: 'Arial';
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 9px 13px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 18px;
+    background: #4361ee;
+    color: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 60px;
+}
+
+.select select::-ms-expand {
+    display: none;
+    
+}
+.select select:hover,
+.select select:focus {
+    color: #ffffff;
+    background: #4361ee;
+
+}
+.select select:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #4361ee transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-top-color: #4361ee;
+    
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #4361ee;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.graphic{
+    height: 100%;   
+}
+.graphContent{
+    font-size: 10px;
+}
+
+.cardContent{
+    width: 100%;
+    display: flex;
+}
+.card{
+    width: 30%;
+    height: 300px;
+    background: linear-gradient(rgba(234,188,26,1), rgba(232,190,41,1));
+    opacity: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    color:#ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+    .pageTitle, .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .titleItem{
+        padding: 30px 0;
+    }
+
+    .select{
+        font-size: 1.7rem;
+        width: 80%;
+        
+    }
+    .select select{
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+        height: 80px;
+    }
+    .graphic{
+        display: flex;
+        position: relative;
+        width: 100wh;
+        text-align: center;
+        margin: 20px auto;
+        align-items: center;
+    }
+    
+    .cardContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        display: flex;
+        position: relative;
+        width: 50%;
+        text-align: center;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .card .labelCard{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
