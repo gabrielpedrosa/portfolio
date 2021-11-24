@@ -1,27 +1,15 @@
-import styled from "styled-components";
-import { Container, Title, Separator, Content, Card, Legend } from "./SectionComponents";
-import Image from 'next/image';
-import sectionStyle from './Style/section.module.css';
+import { Container, Title, Separator, Content, Card, Legend, CardImage } from "./SectionComponents";
 
-const Section = () => {
+const Section = (props) => {
     return (
         <>
-            <Container bgColor='#20150d' fontColor='#fff'>
-                <Title fontSize='28' fontColor='#fff'>Titulo</Title>
-                <Separator/>
+            <Container bgColor='#DCDCDC' fontColor='#20150d'>
+                <Title fontSize='28' fontColor='#20150d'>Titulo</Title>
+                <Separator bgColor='#20150d'/>
                 <Content>
-                    <Card>
-                        <img src='images/image.jpg' className={sectionStyle.cardImage}/>
-                        <Legend>Legendada para a imagem escolhida referente ao prjeto</Legend>
-                    </Card>
-                    <Card>
-                        aqui
-                    </Card>
-                    <Card>
-                        aqui
-                    </Card>
-                    <Card>
-                        aqui
+                    <Card bgColor='#20150d'>
+                        <CardImage src='images/image.jpg' />
+                        <Legend fontColor='#fff'>Legendada para a imagem escolhida referente ao prjeto</Legend>
                     </Card>
                 </Content>
             </Container>
