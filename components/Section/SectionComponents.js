@@ -20,8 +20,8 @@ export const Title = styled.h2`
 
 export const Separator = styled.hr`
     width: 100%;
-    border: 1px solid #fff;
-    background: #fff;
+    border: 1px solid ${props => props.bgColor};
+    background: ${props => props.bgColor};
 `;
 
 export const Content = styled.div`
@@ -34,6 +34,10 @@ export const Content = styled.div`
     position: relative;
 
     @media(max-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media(max-width: 480px) {
         flex-direction: column;
     }
 `;
@@ -46,18 +50,37 @@ export const Card = styled.div`
     min-height: 200px;
     border-radius: 15px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: ${props => props.bgColor};
     overflow: hidden;
     
     @media(max-width: 768px) {
+        width: 48%;
+        max-height: 80vh;
+    }
+
+    @media(max-width: 480px) {
         width: 100%;
         max-height: 80vh;
     }
 `;
 
+export const CardImage = styled.img`
+  width: 100%;
+  height: 100%; 
+  max-height: 30vh;
+  min-height: 200px;
+  border-radius:10px;
+  border-bottom-left-radius: 0px; 
+  border-bottom-right-radius: 0px;
+  transition: 0.7s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+`;
+
 export const Legend = styled.h3`
     text-align: center;
     padding: 10px;
-    color: #000;
-
+    color: ${props => props.fontColor};
 `;
