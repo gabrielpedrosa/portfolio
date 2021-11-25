@@ -1,4 +1,4 @@
-const sectionData = [
+const sectionData = 
     {
         "config": {
             "container": {
@@ -20,22 +20,17 @@ const sectionData = [
             }
         },
         "titulo": "Mais Populares",
-        "images": {
-            0: "images/image.jpg",
-            1: "images/image.jpg",
-            2: "images/image.jpg",
-            3: "images/image.jpg",
-            4: "images/image.jpg"
-        },
-        "description": {
-            0: "Projeto numero 0",
-            1: "Projeto numero 1",
-            2: "Projeto numero 2",
-            3: "Projeto numero 3",
-            4: "Projeto numero 4"
-        }
-
+        "projects": {
+            "size": 5,
+            "items": [
+                {"id":0,"image":"images/image.jpg", "description": "Projeto numero 0"},
+                {"id":1,"image":"images/image.jpg", "description": "Projeto numero 1"},
+                {"id":2,"image":"images/image.jpg", "description": "Projeto numero 2"},
+                {"id":3,"image":"images/image.jpg", "description": "Projeto numero 3"},
+                {"id":4,"image":"images/image.jpg", "description": "Projeto numero 4"}
+            ]
+        }       
     }
-];
+;
 
 export default sectionData;

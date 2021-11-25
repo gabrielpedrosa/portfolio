@@ -3,14 +3,16 @@ import { Container, Title, Separator, Content, Card, Legend, CardImage } from ".
 const Section = (props) => {
     return (
         <>
-            <Container bgColor='#DCDCDC' fontColor='#20150d'>
-                <Title fontSize='28' fontColor='#20150d'>Titulo</Title>
-                <Separator bgColor='#20150d'/>
+            <Container bgColor={props.values.config.container.backgroundColor} fontColor={props.values.config.container.fontColor}>
+                <Title fontSize={props.values.config.title.fontSize} fontColor={props.values.config.title.fontColor}>{props.values.titulo}</Title>
+                <Separator bgColor={props.values.config.separator.backgroundColor}/>
                 <Content>
-                    <Card bgColor='#20150d'>
-                        <CardImage src='images/image.jpg' />
-                        <Legend fontColor='#fff'>Legendada para a imagem escolhida referente ao prjeto</Legend>
+                    {props.values.projects.items.map(item =>  
+                    <Card key={item.id} bgColor={props.values.config.card.backgroundColor}>
+                        <CardImage src={item.image} />
+                        <Legend fontColor={props.values.config.legend.fontColor}>{item.description}</Legend>
                     </Card>
+                    )}
                 </Content>
             </Container>
         </>
